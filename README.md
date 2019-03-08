@@ -5,8 +5,7 @@ Repo should contain some assets, like a font to be imported and some game assets
 Repo should be forked and returned as a repo link.
 
 ## Candidate notes:
-We want you to implement a standard web page, regarding the above Layout Specification section and the wireframes provided on the repository root folder.
-Feel free to edit layout and decorate it as you want. Animations are welcome too.
+We want you to implement a standard web page, regarding the above Layout Specification section and the wireframes provided on the "Design Specs" folder. We also provide you an assets folder, were you can find all you need to accomplish the layout exectution, including a font and the some images. As you should have noticed, there're also a "Color palette" file on the Design specs folder for saving your time. However, feel free to edit the layout and decorate it as you want. Animations are welcome too. The only requirements for the included assets pack are the usage of the custom font and the gaming assets you may need.
 Also, you're free to add as many tools as you need to the project, such as Grunt, Gulp, Webpack, or npm/yarn dependencies.
 In case of adding some task runner or specific tools, please include the documentation you find significant.  If you simply want to write in ES6, it's ok to ignore the transpiler. We can live with that for this test.
 Usage of frameworks like Angular, React or VueJS are up to you, too. Ok, now this is a joke. You will not need this stuff at all for now.
