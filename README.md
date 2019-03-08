@@ -31,7 +31,7 @@ ___
 - Game board;
 - Player Wins;
 - Number of games played;
-- Rules (First player to win N number of games, wins.);
+- Rules (First player to win 5 number of games, wins.);
 - When one of the players reaches the needed amount of wins, page gives congrats and scrolls to next section;
 
 ##### Basic Game Requirements (add more features if you want):
