@@ -19,7 +19,7 @@ Do not forget we all have phones, and may want to play your awesome game during 
 ### Section 1
 - Top header featuring sword logo.
 - Should be fixed during site navigation
-- Background should become transparent after N pixels
+- Background should become transparent after 150 pixels
 ___
 ### Section 2
 - Follow the design specification included on the repository to build your profile;
