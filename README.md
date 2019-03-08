@@ -45,10 +45,10 @@ ___
 ___
 ### Section 4
 
-Game final stats;
-Percentage of wins for each player with feedback color on values (green, yellow, red);
-History of game winners;
-Aggregated play time;
+-Game final stats;
+-Percentage of wins for each player with feedback color on values (green, yellow, red);
+-History of game winners;
+-Aggregated play time;
 ___
 ### Section 5
 Footer with SWORD stuff and buttons to subscribe SWORD Games newsletter;
