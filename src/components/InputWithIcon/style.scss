@@ -1,0 +1,21 @@
+.input-container {
+  display: flex;
+
+  input {
+    border-style: none;
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #d8d8d8;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-style: none;
+
+    img {
+      max-width: 10px;
+    }
+  }
+}

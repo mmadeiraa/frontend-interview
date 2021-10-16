@@ -1,0 +1,30 @@
+.informationWrapper {
+  margin-top: 125px;
+  padding: 50px 140px;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 0fr 1fr 2fr; 
+  gap: 0px 25px;
+  align-items: flex-end;
+
+  .pictureArea {
+    width: 170px;
+    height: 170px;
+    border: 1px solid #d8d8d8;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .candidateBio {
+    h2 {
+      font-weight: normal;
+      font-size: 30px;
+    }
+  }
+
+  .candidateDescription {
+    text-align: right;
+  }
+}

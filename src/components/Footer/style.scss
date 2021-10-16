@@ -1,0 +1,30 @@
+footer {
+  background-color: #f6f7f8;
+  padding: 50px 140px;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 0px 25px;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+
+    & > li {
+      margin: 5px 0px;
+    }
+  }
+
+  .socials {
+    li {
+      display: inline;
+      margin-left: 10px;
+    }
+
+    img {
+      max-width: 25px;
+    }
+  }
+}

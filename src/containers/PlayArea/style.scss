@@ -1,0 +1,32 @@
+.playAreaWrapper {
+  align-items: center;
+  background-color: #f6f7f8;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 140px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  section {
+    display: grid; 
+    gap: 0px 25px;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    margin-top: 25px;
+
+    .playerPoints {
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+
+      span:last-child {
+        font-weight: normal;
+        font-size: 70px;
+      }
+    }
+  }
+}

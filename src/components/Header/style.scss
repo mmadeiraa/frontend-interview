@@ -1,3 +1,29 @@
 header {
+  align-items: center;
+  background-color: #d8d8dd;
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 140px;
+  position: fixed;
+  right: 0;
+  top: 0;
 
+  & > h1 > img {
+    width: 55%;
+  }
+
+  .rightHeader {
+    text-align: right;
+
+    p {
+      font-style: italic;
+      
+      &:first-child {
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+  }
 }

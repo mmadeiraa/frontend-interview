@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Glacial;
+  src: url(../assets/fonts/glacialindifference-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: Glacial;
+  src: url(../assets/fonts/glacialindifference-bold-webfont.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Glacial;
+  src: url(../assets/fonts/glacialindifference-italic-webfont.woff);
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: Glacial;
+  color: #2c2e30;
+
+  p {
+    margin: 0;
+  }
+}
