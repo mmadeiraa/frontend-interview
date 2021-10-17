@@ -7,13 +7,16 @@ import './style.scss';
 const Header = () => {
 	const [scrolled150, setScroll] = useState(false);
   useEffect(() => {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 150) {
+		const onScroll = () => {
+			if (window.scrollY > 150) {
 				setScroll(true);
 			} else {
 				setScroll(false);
 			}
-    })
+		}
+    document.addEventListener("scroll", onScroll);
+
+		return () => document.removeEventListener("scroll", onScroll);
   });
 
 	return (

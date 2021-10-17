@@ -1,5 +1,7 @@
+@import "src/utils/variables";
+
 footer {
-  background-color: #f6f7f8;
+  background-color: $neo-blank;
   padding: 50px 140px;
   display: grid; 
   grid-auto-columns: 1fr; 

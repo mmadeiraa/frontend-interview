@@ -33,7 +33,7 @@ const Statistics = () => {
             {matches}
           </span>
           <h3>Game History</h3>
-          {matchesHistory.map(val => <span className="singleHistory">P{val}</span>)}
+          {matchesHistory.map((val, idx) => <span key={idx} className="singleHistory">P{val}</span>)}
         </div>
       </section>
     </section>

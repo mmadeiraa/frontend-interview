@@ -7,7 +7,7 @@ const GameWinner = ({ closeGameWinner, winner }) => (
     <div>
       <p>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ ✧ﾟ･: *</p>
       <p>The Player{winner} won!</p>
-      <button onClick={() => closeGameWinner()}>Reset board!</button>
+      <button onClick={() => closeGameWinner()}>See statistics!</button>
     </div>
   </div>
 );

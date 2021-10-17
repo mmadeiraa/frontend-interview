@@ -1,3 +1,5 @@
+@import "src/utils/variables";
+
 .input-container {
   display: flex;
 
@@ -8,14 +10,14 @@
 
   button {
     padding: 10px;
-    background-color: #d8d8d8;
+    background-color: $grey;
     color: white;
     min-width: 50px;
     text-align: center;
     border-style: none;
 
     img {
-      max-width: 10px;
+      max-width: 20px;
     }
   }
 }

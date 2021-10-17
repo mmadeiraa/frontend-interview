@@ -37,11 +37,12 @@ const initialState = {
   }
 };
 
-const resetState = {
-  boardSize: 9,
+const resetMoves = {
   currentPlayer: '1',
   moves: 0,
-  moveLimit: 9,
+}
+
+const resetMatchWins = {
   currentMatchWins: {
     player1: 0,
     player2: 0,
@@ -50,6 +51,18 @@ const resetState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case 'set_board_number': {
+      const size = Number(action.payload);
+
+      return {
+        ...state,
+        boardSize: size,
+        moveLimit: size,
+        moves: 0,
+        board: [...Array(size).fill(null)],
+      }
+    }
+
     case 'set_new_board': {
       const { board, currentPlayer } = state;
       board.splice(action.payload, 1, currentPlayer);
@@ -79,8 +92,8 @@ const reducer = (state, action) => {
 
       return {
         ...state,
-        ...resetState,
-        board: [...Array(9).fill(null)],
+        ...resetMoves,
+        board: [...Array(state.boardSize).fill(null)],
         currentMatchWins: { 
           ...currentMatchWins, 
           [matchPlayer]: currentMatchWins[matchPlayer] + 1,
@@ -89,13 +102,10 @@ const reducer = (state, action) => {
     }
 
     case 'set_draw': {
-      const { payload } = action;
-      const { currentMatchWins } = state;
-
       return {
         ...state,
-        ...resetState,
-        board: [...Array(9).fill(null)],
+        ...resetMoves,
+        board: [...Array(state.boardSize).fill(null)],
       }
     }
 
@@ -116,8 +126,9 @@ const reducer = (state, action) => {
     case 'reset_board': {
       return {
         ...state,
-        ...resetState,
-        board: [...Array(9).fill(null)],
+        ...resetMoves,
+        ...resetMatchWins,
+        board: [...Array(state.boardSize).fill(null)],
         winner: null,
       }
 }
