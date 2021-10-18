@@ -1,3 +1,7 @@
+# Run application
+Install dependencias with: yarn;
+Run app with: yarn start;
+
 # Front-End test
 
 Test package based on a repo
