@@ -9,6 +9,13 @@ footer {
   gap: 0px 25px;
   align-items: center;
 
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px 25px;
+    align-items: center;
+  }
+
   ul {
     list-style: none;
     padding: 0;
